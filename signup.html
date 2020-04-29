@@ -8,7 +8,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
       <link rel="stylesheet" media="screen" href="assets/style/style.css"/>
-      <link rel="stylesheet" media="screen" href="assets/style/reset.css"/>
+      <link rel="stylesheet" media="screen" href="assets/style/normalize.css"/>
    </head>
   <body>
       <img class="logo_header" src="assets/img/banner.png" alt="ISUD_Logo">
@@ -22,16 +22,16 @@
                    <button class="loginbtn">Login</button>
                    <div class="loginbtn-content">
                        	<form action="#" method="get" onsubmit="return getHashData()">
-                           <label for="loginUser">Username: </label> 
+                           <label for="loginUsername">Username: </label> 
                            <input type="text" name="loginUser" id="loginUsername">
 
-                           <label for="loginPass">Password:</label>
+                           <label for="loginPassword">Password:</label>
                            <input type="password" name="loginPass" id="loginPassword">
                             
-                           <input type="submit" value="Login">
+                           <input type="submit" name="loginBtn" value="Login">
                            
                             <label for ="signBtn">No account? Head to our sign-up page:</label>
-                            <input type="button" name="signBtn" onclick="alert('You are already on the sign-up page!')" value="Sign-Up">
+                            <input type="button" id="signBtn" onclick="alert('You are already on the sign-up page!')" value="Sign-Up">
 			    </form>
                    </div>
               </div>
@@ -41,21 +41,22 @@
       <h2>We welcome you to The International Society for Universal Dialogue</h2>
       <div class="signup">
           <h3>Please use the following contact form to sign-up:</h3>
-           <form action="#" method="post">
-               <label for="first_name">First Name: </label> 
-               <input type="text" name="first_name" id="firstNLbl">
+           <form action="#" method="get" onsubmit="return validateSignupInputs()" id="signform">
+               <label for="firstN">First Name: </label> 
+               <input type="text" name="first_name" id="firstN">
 
-               <label for="last_name">Last Name: </label> 
-               <input type="text" name="last_name" id="lastNLbl">
+               <label for="lastN">Last Name: </label> 
+               <input type="text" name="last_name" id="lastN">
+                              
+               <label for="signUpEmail">Email: </label> 
+               <input type="text" name="emailUser" id="signUpEmail">
+        
+               <label for="signUpPhone">Phone Number: </label> 
+               <input type="text" name="phoneUser" id="signUpPhone">
 
-               <label for="signupUser">Username: </label> 
-               <input type="text" name="signUpUser" id="signUpUsername">
+               <input type="submit" value="Submit!"> 
 
-               <label for="loginPass">Password:</label>
-               <input type="password" name="loginPass" id="loginPassword">
-
-               <input type="submit" value="Sign-Up!"> 
-   	  </form>         
+          </form>
       </div>
    </body>
 </html>

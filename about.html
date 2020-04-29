@@ -5,7 +5,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
       <link rel="stylesheet" media="screen" href="assets/style/style.css"/>
-      <link rel="stylesheet" media="screen" href="assets/style/reset.css"/>
+      <link rel="stylesheet" media="screen" href="assets/style/normalize.css"/>
    </head>
   <body>
       <img class="logo_header" src="assets/img/banner.png" alt="ISUD_Logo">
@@ -19,17 +19,14 @@
                    <button class="loginbtn">Login</button>
                    <div class="loginbtn-content">
                        <form method="get" action="#null">
-		      	 <label for="loginUser">Username: </label> 
+		      	 <label for="loginUsername">Username: </label> 
 		       	 <input type="text" name="loginUser" id="loginUsername">
-
-		 	<label for="loginPass">Password:</label>
-		       <input type="password" name="loginPass" id="loginPass">
-
-                           <input type="button" onclick="alert('Hello World!')" value="Login">
-
-                           <label for ="signBtn">No account? Head to our sign-up page:</label>
-                           <input type="button" name="signBtn" onclick="location.href='signup.html'" value="Sign-Up">
-	                    </form>
+		 	 <label for="loginPassword">Password:</label>
+		         <input type="password" name="loginPass" id="loginPassword">
+                         <input type="submit" name="loginBtn" value="Login">
+                         <label for ="signBtn">No account? Head to our sign-up page:</label>
+                         <input type="button" id="signBtn" onclick="location.href='signup.html'" value="Sign-Up">
+	               </form>
                    </div>
               </div>
             </li>
@@ -46,11 +43,13 @@
             	<li>How best to work toward a culture of peace?</li>
                 <li>What is the relationship between the basic liberties of individuals and the collective rights of cultural groups?</li>
         </ul>
-        </div>
-        <img src="assets/img/Pawel.jpg" alt="Pawel_ISUDFounder">
-        <div class="about_text">
+          </div>
+      	</div>    
+	<div class = "pawelImg">
+	  <img src="assets/img/Pawel.jpg" alt="Pawel_ISUDFounder">
+	</div>
+	<div class="pawel_image_cap">
             <p><a href="videos.html">Pawel Kuczynski</a>: Founder and Artistic Videographer</p>
         </div>	
-      </div>     
    </body>
 </html>
